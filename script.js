@@ -1,8 +1,6 @@
-let nav = document.querySelectorAll( "#navbar" );
-
-gsap.from( nav, {
+const navLinks = document.querySelectorAll( '#navbar a' );
+gsap.from( navLinks, {
     y: -100,
     duration: 1,
-    opacity: 0,
-    ease: "power1.out",
+    opacity: "0"
 } );
