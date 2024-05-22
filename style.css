@@ -5,10 +5,11 @@
     --yellow: #00ffc8;
 }
 
-:root
+
+/* :root
 {
-    --yellow: #26d4da;
-}
+    --yellow: #0632f3;
+} */
 
 *
 {
@@ -792,11 +793,6 @@ header .navbar ul li a:hover
     color: #fff;
     border: 1px solid #333;
     padding: 1vh 2vw;
-    border-radius: 8vw;
-    -webkit-border-radius: 8vw;
-    -moz-border-radius: 8vw;
-    -ms-border-radius: 8vw;
-    -o-border-radius: 8vw;
 
     &:hover
     {
@@ -815,4 +811,8 @@ header .navbar ul li a:hover
         align-items: center;
         justify-content: space-around;
     }
+}
+.fa-solid
+{
+    color: var(--yellow);
 }
