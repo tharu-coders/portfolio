@@ -5,17 +5,17 @@
     --yellow: #00ffc8;
 }
 
-
-/* :root
+:root
 {
-    --yellow: #0632f3;
-} */
+    --yellow: #26d4da;
+    }
 
 *
 {
     font-family: 'Comfortaa', cursive;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Nunito', sans-serif;
+    /* font-family: "urbanist"; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -135,18 +135,19 @@ header
     flex-flow: column;
     text-align: center;
 }
+
 /*size of img to make itimg*/
 header .welcome img
 {
     height: 15rem;
     width: 15rem;
-    border-radius: 50%;
-    background-image: url("/lureyboy.tiff");
     object-fit: cover;
-    background-repeat: no-repeat;
-    background-size: center;
-    margin-bottom: 1rem;
     border: .7rem solid var(--yellow);
+    border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
 }
 
 header .welcome .name
@@ -256,7 +257,7 @@ header .navbar ul li a:hover
         left: -120%;
     }
 
-                                /* .container
+        /* .container
     {
         display: block;
     */
@@ -270,10 +271,11 @@ header .navbar ul li a:hover
     {
         padding: 0;
     }
-                                #navbar
-                                {
-                                    display: block;
-                                }
+
+        #navbar
+        {
+            display: block;
+        }
 }
 
 @media (max-width:768px)
@@ -771,6 +773,7 @@ header .navbar ul li a:hover
     padding-right: 1rem;
     color: var(--yellow);
 }
+
 #navbar
 {
     position: absolute;
@@ -789,14 +792,23 @@ header .navbar ul li a:hover
 #navbar > a
 {
     position: relative;
+    top: -10rem;
     font-size: 1.5rem;
     color: #fff;
-    border: 1px solid #333;
-    padding: 1vh 2vw;
+    border-bottom: 1px solid #fff;
 
-    &:hover
+    &:hover,
+        active
     {
         background-color: var(--yellow);
+        padding: 1vh 2vw;
+            border-bottom: none;
+            transition: all ease-in .6s;
+            -webkit-transition: all ease-in .6s;
+            -moz-transition: all ease-in .6s;
+            -ms-transition: all ease-in .6s;
+            -o-transition: all ease-in .6s;
+        border-radius: 8vw;
     }
 }
 
@@ -805,14 +817,10 @@ header .navbar ul li a:hover
     #navbar
     {
         display: block;
-        height: 10rem;
+        height: 8rem;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-around;
     }
-}
-.fa-solid
-{
-    color: var(--yellow);
 }

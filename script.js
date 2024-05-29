@@ -1,10 +1,11 @@
-const navLinks = document.querySelectorAll( '#navbar a' );
-gsap.from( navLinks, {
-    y: -100,
-    duration: 1,
-    opacity: "0"
-} );
+let nav = document.querySelectorAll( "#navbar" );
 
+gsap.to( nav, {
+    y: "10rem",
+    duration: 2,
+    delay: .5,
+    ease: "power1.out",
+} );
 
 
 
