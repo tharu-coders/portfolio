@@ -1,212 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niraj Tharu | Creative Developer</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>woriking-for-Tharu</title>
-    <!---THE FONTAWESOME LINK-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-
-    </head>
-
-    <body>
-        <header>
-            <!---HEADER START-->
-            <div class="welcome">
-                <img src="https://media.istockphoto.com/id/157570921/photo/manga-painter.jpg?s=1024x1024&w=is&k=20&c=gltvlbM3HX0P7H3LVQP2UB1ZyOnFApUQaQflpcOJIaw=" alt="">
-                <!-- <div class="circle"></div> -->
-                <h3 class="name">Niraj-Dangaura THARU.</h3>
-                <p class="Fullname">Full stack dev JUNIOR.</p>
-            </div>
-
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#home">About</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+    <!-- Navigation -->
+    <div class="nav-wrapper">
+        <div class="brand">NT</div>
+        <div class="menu-btn">
+            <div class="menu-btn__lines"></div>
+        </div>
+        <div class="nav-overlay">
+            <nav class="nav-content">
+                <ul class="nav-links">
+                    <li><a href="#home" data-text="Home">Home</a></li>
+                    <li><a href="#about" data-text="About">About</a></li>
+                    <li><a href="#skills" data-text="Skills">Skills</a></li>
+                    <li><a href="#work" data-text="Work">Work</a></li>
+                    <li><a href="#contact" data-text="Contact">Contact</a></li>
                 </ul>
+                <div class="nav-social">
+                    <a href="https://github.com/tharu-coders" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
             </nav>
-        </header>
-        <!---HEADER END-->
-        
-        <!----HOME STARTS-->
-        <section class="home" id="home">
-            <i class="fa-solid fa-bars"></i>
-            <div id="navbar">
-                <i class="fa-solid fa-circle-xmark"></i>
-                <a href="#about">About</a> 
-                <a href="#education">Education</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section-home">
+            <div class="home-content">
+                <div class="text-reveal">
+                    <h1 class="main-title">
+                        <span class="line">Creative</span>
+                        <span class="line">Developer</span>
+                    </h1>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="scroll-text">Scroll to explore</div>
+                    <div class="scroll-line"></div>
+                </div>
             </div>
-            <h3>HI THERE !</h3>
-            <h1>I'm <span>Niraj-Dangaura THARU</span></h1>
-            <p>Computer Engineering student, intersted in Full-stack dev.
-                Looking for projects to work on and learn more and more. </p>
-            <a href="#about"><button class="btn">About me <i class="fas fa-user"></i></button></a>
+            <div class="home-images">
+                <div class="image-container">
+                    <div class="image-slide" style="background-image: url('your-image-1.jpg')"></div>
+                    <div class="image-slide" style="background-image: url('your-image-2.jpg')"></div>
+                    <div class="image-slide" style="background-image: url('your-image-3.jpg')"></div>
+                </div>
+            </div>
         </section>
-        <!----HOME ENDS-->
 
-        <!----ABOUT STARTS-->
-        <section class="about" id="about">
-            <h1 class="heading"> <span>About</span> me.</h1>
-            <div class="row">
-                <div class="info">
-                    <h3><span>Full-name : </span>Niraj-Dangaura THARU</h3>
-                    <!-- <h3><span>Full-name : </span>Saad-eddine ELHIMEUR</h3> -->
-                    <h3><span>Age : </span>17</h3>
-                    <h3><span>School : </span>MSS</h3>
-                    <h3><span>Nationality : </span>Nepali</h3>
-                    <h3><span>Language : </span>Nepali</h3>
-                    <a href="#contact"><button id="GetFile" class="btn">contact Me <i
-                                class="fas fa-phone"></i></i></button></a>
-                </div>
-                <div class="counter">
-                    <div class="box">
-                        <span>2+</span>
-                        <h3>School Projects</h3>
+        <!-- About Section -->
+        <section id="about" class="section-about">
+            <div class="about-wrapper">
+                <div class="about-text">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="text-content">
+                        <p class="large-text">I'm Niraj Tharu, a creative developer focused on building modern digital experiences.</p>
+                        <p class="detail-text">Currently pursuing Computer Engineering and passionate about creating innovative web solutions.</p>
                     </div>
-                    <div class="counter">
-                        <div class="box">
-                            <span>3+</span>
-                            <h3>Coursera Certificates</h3>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="number">17</span>
+                            <span class="label">Years Young</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">2+</span>
+                            <span class="label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">3+</span>
+                            <span class="label">Certificates</span>
                         </div>
                     </div>
                 </div>
-                <!----ABOUT ENDS-->
-
-                <!----EDUCATION STARTS-->
-                <section class="education" id="education">
-                    <h1 class="heading"> <span>my</span> education.</h1>
-                    <div class="box-container">
-                        <div class="box">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>2021</span>
-                            <h3>Shree B B F P E School</h3>
-                            <p> Achieved my primary-level in last years with 'A+' Grade,
-                            </p>
-                        </div>
-                        <div class="box">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>2023</span>
-                            <h3>Shree M S School </h3>
-                            <p> Achieved my secondary-level last year with 'A' Grage,
-                            </p>
-                        </div>
-                        <div class="box">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>2024</span>
-                            <h3>Shree M S School </h3>
-                            <p>Computer Engineering, studying as first year with awesome, awesome
-                                school projects.
-                            </p>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="/1731674657183 - Copy.jpg" alt="Niraj Tharu">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>        <!-- Skills Section -->
+        <section id="skills" class="section-skills">
+            <div class="skills-container">
+                <h2 class="section-title">Skillset</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="category-label">Development</div>
+                        <div class="skills-list">
+                            <div class="skill-item" data-progress="85">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML/CSS</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="75">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="60">
+                                <div class="skill-info">
+                                    <span class="skill-name">MERN</span>
+                                    <span class="skill-percentage">60%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </section>
-                <!----EDUCATION ENDS-->
-
-                <!----SKILLS STARTS-->
-                <section class="skills" id="skills">
-                    <h1 class="heading"><span>my</span> Skills.</h1>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="box-container1">
-                        <div class="box1">
-                            <span>PHP.</span>
-                            <div class="progress1">
-                                <div class="progress-value"></div>
+                   <!-- Tools & Technologies Section -->
+                   <div class="tech-grid">
+                    <div class="tech-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                        <div class="tech-level">
+                            Advanced
+                            <div class="level-dots">
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
                             </div>
-                            <br>
-                            <span>C. LANGUAGE.</span>
-                            <div class="progress2">
-                                <div class="progress-value"></div>
-                            </div>
-                            <br>
-                            <span>ASSEMBLY.</span>
-                            <div class="progress5">
-                                <div class="progress-value"></div>
-                            </div>
-                            <br>
-                            <span>REACTJS.</span>
-                            <div class="progress7">
-                                <div class="progress-value"></div>
-                            </div>
-                            <br>
-                        </div>
-                        <div class="box">
-                            <span>HTML5 & CSS3.</span>
-                            <div class="progress3">
-                                <div class="progress-value"></div>
-                            </div>
-                            <br>
-                            <span>JAVA PROGRAMMING.</span>
-                            <div class="progress4">
-                                <div class="progress-value"></div>
-                            </div>
-                            <br>
-                            <span>LINUX-FEDORA.</span>
-                            <div class="progress6">
-                                <div class="progress-value"></div>
-                            </div>
-
-                            <!-- addon by me for test -->
-                            <br>
-                            <span>OTHERS.</span>
-                            <div class="progress8">
-                                <div class="progress-value"></div>
-                            </div>
-                            <!-- addon by me for test -->
                         </div>
                     </div>
-                </section>
-                <!----SKILLS ENDS-->
-
-                <!----CONTACT START-->
-                <section class="contact" id="contact">
-                    <h1 class="heading"> <span>contact</span> me.</h1>
-                    <div class="row">
-                        <div class="content">
-                            <br>
-                            <br>
-                            <br>
-                            <h3 class="title"> contact info</h3>
-                            <div class="info">
-                                <h3> <i class="fas fa-envelope"></i>mrnirajbro@gmail.com</h3>
-                                <h3> <i class="fas fa-phone"></i>+977 9767668978</h3>
-                                <h3> <i class="fas fa-map-marker-alt"></i>bardagoriya rm 5, kailali</h3>
+                    <div class="tech-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                        <div class="tech-level">
+                            Advanced
+                            <div class="level-dots">
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot"></span>
                             </div>
                         </div>
-                        <form  action="https://formspree.io/f/mwpeyjqe"
-                        method="POST">
-                            <input type="text" name="name" placeholder="Name" class="box" autocomplete="off" required>
-                            <input type="email" name="email" placeholder="Email" class="box" autocomplete="off" required>
-                            <input type="text" name="text" placeholder="Topic" class="box" autocomplete="off" required> 
-                            <textarea name="message" id="" cols="30" rows="10" placeholder="Message"
-                                class="box message" autocomplete="off" required></textarea>
-                            <button type="submit" class="btn">send <i class="fas fa-paper-plane"></i></button>
-                        </form>
                     </div>
-                </section>
-                <!----CONTACT ENDS-->
-                <!-- GSAP CDN -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-                <script src="script.js"></script>
+                    <!-- Add more tech items following the same pattern -->
+                </div>
+                </div>
+            </div>
+            <div class="skills-background">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+        </section>
 
-</html>
+        <!-- Work Section -->
+        <section id="work" class="section-work">
+            <div class="work-header">
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-subtitle">Some of my recent projects</p>
+            </div>
+            <div class="work-grid">
+                <div class="work-item">
+                    <div class="work-image">
+                        <img src="/project.jpg" alt="Project 1">
+                        <div class="work-overlay">
+                            <div class="work-details">
+                                <h3>Project Name</h3>
+                                <p>Web Development</p>
+                                <a href="#" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more work items as needed -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-contact">
+            <div class="contact-container">
+                <div class="contact-content">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h3>Email</h3>
+                                    <p>mrnirajbro@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h3>Phone</h3>
+                                    <p>+977 9767668978</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h3>Location</h3>
+                                    <p>Bardagoriya rm 5, Kailali</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <form action="https://formspree.io/f/mwpeyjqe" method="POST">
+                                <div class="form-group">
+                                <input type="text" name="name" required>
+                                <label>Your Name</label>
+                                <span class="line"></span>
+                                </div>
+                                <div class="form-group">
+                                <input type="email" name="email" required>
+                                <label>Your Email</label>
+                                <span class="line"></span>
+                                </div>
+                                <div class="form-group">
+                                <textarea name="message" required></textarea>
+                                <label>Your Message</label>
+                                <span class="line"></span>
+                                </div>
+                                <button type="submit" class="submit-btn">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                                </button>
+                                </form>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </section>
+                                </main>
+                                <!-- Footer -->
+                                <footer class="footer">
+                                <div class="footer-content">
+                                <div class="footer-text">
+                                <p>© 2024 Niraj Tharu. All rights reserved.</p>
+                                </div>
+                                <div class="footer-social">
+                                <a href="https://github.com/tharu-coders"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                                </div>
+                                </footer>
+                                <!-- Scripts -->
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+                                <script src="script.js"></script>
+                                </body>
+                                </html>
