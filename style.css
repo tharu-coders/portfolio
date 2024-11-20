@@ -713,6 +713,7 @@ body {
     }
     
     .tech-item {
+        display:none;
         min-height: 160px;
         padding: 1.5rem;
     }
